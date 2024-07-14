@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 
 export default function Card({
@@ -6,8 +6,21 @@ export default function Card({
     className,
     ...props
 }) {
+
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        fetch(apiLink)
+        .then(res => res.json())
+        .then(data => {
+            setData(data);
+            console.log(data);
+        })
+    },[])
+
     return(
-        <div>Card</div>
+        <div>
+            <img src={data.profile} alt="" />
+        </div>
     )
 }
 
