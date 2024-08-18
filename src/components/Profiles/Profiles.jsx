@@ -1,7 +1,10 @@
 import React from "react";
 
 function Profiles() {
-    return(
+
+   
+
+    return (
         <div>Profiles</div>
     )
 }

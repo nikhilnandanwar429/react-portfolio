@@ -8,10 +8,9 @@ function App() {
 
   return (
     <>
-    <Header />
-    <Outlet />
-    <Card apiLink={"https://codechef-api.vercel.app/nikhil_nand"}/>
-
+      <Header />
+      <Outlet />
+      
     </>
   )
 }
