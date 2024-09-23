@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Header() {
+    const [fla, useFla] = useState(false);
     return (
-        <header className='w-full h-20 bg-white  flex px-4 py-4 justify-center border border-b-lime-500 shadow-md'  >
+        <>
+        <header className='w-full h-20 bg-white  flex px-4 py-4 justify-center border border-b-lime-500 shadow-md '  >
             <div className="w-full xl:w-9/12 bg-white  flex px-4  justify-between">
                 <div className='w-auto text-start text-3xl font-bold '>
                     Hello World
@@ -48,7 +50,8 @@ function Header() {
                     <div className="w-9 h-10 flex flex-col items-center justify-center">
                         <input className="hidden peer" type="checkbox" />
                         <div
-                            className="w-[60%] h-[2px]  bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.5rem] peer-checked:rotate-[-45deg]"
+                            className={`w-[60%] h-[2px]  bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.5rem] peer-checked:rotate-[-45deg] `
+                            }
                         ></div>
                         <div
                             className="w-[60%] h-[2px]  bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden"
@@ -57,16 +60,39 @@ function Header() {
                             className="w-[60%] h-[2px]  bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.5rem] peer-checked:rotate-[45deg]"
                         ></div>
                     </div>
-                    <div className="bg-red-700 w-36 h-80 ">
-                        
-                    </div>
+                   
                 </label>
 
-            </div>
-            
+            </div>         
 
         </header>
+        <div className={`w-full flex justify-end `}>
+            <div className="w-32 bg-red-700 rounded-lg" >
+                <ul className='w-full flex flex-col items-center justify-between '>                    
+                    <NavLink to="/" className="font-bold hover:bg-slate-300 hover:px-2 hover:rounded-lg p-4 border-y-slate-700 w-full border-y-2">
+                        Home
+                    </NavLink>
                 
+                    <NavLink to="/projects" className="font-bold hover:bg-slate-300 hover:px-2 hover:rounded-lg p-4 border-y-slate-700 w-full border-y-2">
+                        Projects
+                    </NavLink>
+                
+                    <NavLink to="/profiles" className="font-bold hover:bg-slate-300 hover:px-2 hover:rounded-lg p-4 border-y-slate-700 w-full border-y-2">
+                        Profiles
+                    </NavLink>
+                
+                    <NavLink to="/" className="font-bold hover:bg-slate-300 hover:px-2 hover:rounded-lg p-4 border-y-slate-700 w-full border-y-2">
+                        Contacts
+                    </NavLink>
+                
+                    <NavLink to="/" className="font-bold hover:bg-slate-300 hover:px-2 hover:rounded-lg p-4 border-y-slate-700 w-full border-y-2">
+                        Home
+                    </NavLink>
+                    
+                </ul>
+            </div>
+        </div>
+        </>
     )
 }
 
