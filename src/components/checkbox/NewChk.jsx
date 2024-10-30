@@ -9,6 +9,7 @@ const NewChk = () => {
     };
 
     return (
+        <div className="relative inline-block text-gray-900">
         <label className="burger block cursor-pointer" htmlFor="burger">
             <input
                 type="checkbox"
@@ -86,6 +87,7 @@ const NewChk = () => {
 
             </nav>
         </label>
+        </div>
     );
 };
 
