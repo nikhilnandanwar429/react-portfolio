@@ -1,11 +1,16 @@
 import React from "react";
+import Ch from "../checkbox/Ch";
 
 function Profiles() {
 
-   
+
 
     return (
-        <div>Profiles</div>
+        <>
+            <div>Profiles</div>
+            <Ch/>
+            
+        </>
     )
 }
 
