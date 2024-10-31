@@ -1,13 +1,13 @@
 import React from "react";
-import Card from "../Cards/Cards";
+import {Cards} from "../index";
 
 function Projects() {
 
     return(
         <>
         <div>Projects</div>
-        <div className="mx-6">
-            <Card />
+        <div className="mx-6"> 
+            <Cards heading={"Projects Hello"}/>
         </div>
 
         </>

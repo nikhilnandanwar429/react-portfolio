@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Checkbox from "../checkbox/Checkbox";
-import NewChk from "../checkbox/NewChk";
 
 function Header() {
     const [fla, useFla] = useState(false);
@@ -48,11 +47,8 @@ function Header() {
                     </div>
 
                     {/* // Three line button */}
-                    <div className="md:hidden flex justify-between ">
-
-
-                        <Checkbox />
-                        <NewChk/>
+                    <div className="md:hidden flex justify-between  items-center">                        
+                        <Checkbox/>
                     </div>
 
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Ch from "../checkbox/Ch";
+import {Cards} from '../index'
 
 function Profiles() {
 
@@ -8,7 +8,7 @@ function Profiles() {
     return (
         <>
             <div>Profiles</div>
-            <Ch/>
+            <Cards heading={"Profiles Hello"}/>
             
         </>
     )
