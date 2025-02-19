@@ -21,16 +21,13 @@ const NewChk = () => {
                 />
                 <div>
                     <span
-                        className={`block w-6 h-0.5 bg-black mb-1 transition-transform ${isOpen ? 'transform rotate-45 translate-y-2' : ''
-                            }`}
+                        className={`block w-6 h-0.5 bg-black mb-1 transition-transform ${isOpen ? 'transform rotate-45 translate-y-2' : '' }`}
                     ></span>
                     <span
-                        className={`block w-6 h-0.5 bg-black mb-1 transition-opacity ${isOpen ? 'opacity-0' : ''
-                            }`}
+                        className={`block w-6 h-0.5 bg-black mb-1 transition-opacity ${isOpen ? 'opacity-0' : '' }`}
                     ></span>
                     <span
-                        className={`block w-6 h-0.5 bg-black transition-transform ${isOpen ? 'transform -rotate-45 -translate-y-1' : ''
-                            }`}
+                        className={`block w-6 h-0.5 bg-black transition-transform ${isOpen ? 'transform -rotate-45 -translate-y-1' : '' }`}
                     ></span>
                 </div>
                 <nav className={` popup-window transform  absolute right-0 mt-10 p-2 bg-gray-100 shadow-lg border border-gray-300 rounded-md transition-all duration-100 ${isOpen ? 'scale-125 opacity-100 visible' : 'opacity-0 invisible scale-75'}`}>
