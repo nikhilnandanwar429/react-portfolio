@@ -13,11 +13,14 @@ const router = createBrowserRouter(
       <Route path='profiles' element={<Profiles />} />
       <Route path='contacts' element={<Contacts />} />
     </Route>
-  )
+  ),
+  {
+    basename: '/ReactPortfolio'
+  }
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
