@@ -35,7 +35,7 @@ const NewChk = () => {
                         <li>
                             <button className="flex items-center w-full px-4 py-2 text-xs text-gray-800 hover:bg-blue-400 hover:text-white rounded-md transition-colors"> 
                                                                         
-                                <span ><NavLink to="/" onClick={toggleMenu}>Home</NavLink></span>
+                                <span><NavLink to="/" onClick={toggleMenu}>Home</NavLink></span>
                             </button>
                         </li>
                         <li>
